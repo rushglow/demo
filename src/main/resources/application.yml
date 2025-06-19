@@ -1,0 +1,34 @@
+#Sun Jun 08 18:59:27 UTC 2025
+micronaut:
+  application:
+    name: demo
+  security:
+    enabled: true
+    token:
+      jwt:
+        signatures:
+          secret:
+            generator:
+              secret: 'verysecretkeyverysecretkeyverysecretkey'
+    authentication: bearer
+
+datasources:
+  default:
+    url: jdbc:postgresql://localhost:5432/demo
+    username: rushglow
+    password: password1
+    driverClassName: org.postgresql.Driver
+    db-type: postgresql
+    dialect: POSTGRES
+    schema-generate: CREATE_DROP
+
+jpa:
+  default:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+        show_sql: true
+
+
+
