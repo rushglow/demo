@@ -1,4 +1,4 @@
-package com.example.controller
+package com.example.security.controller
 
 import com.example.user.dto.RegDto
 import com.example.token.dto.TokenPair

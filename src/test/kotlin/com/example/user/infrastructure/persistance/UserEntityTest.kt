@@ -1,4 +1,4 @@
-package com.example.entity
+package com.example.user.infrastructure.persistance
 
 import com.example.token.infrastructure.persistance.TokenEntity
 import com.example.user.infrastructure.persistance.UserEntity

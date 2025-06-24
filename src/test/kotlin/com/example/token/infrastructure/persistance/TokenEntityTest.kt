@@ -1,4 +1,4 @@
-package com.example.entity
+package com.example.token.infrastructure.persistance
 
 
 import com.example.token.infrastructure.persistance.TokenEntity

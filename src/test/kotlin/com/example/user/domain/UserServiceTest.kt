@@ -1,4 +1,4 @@
-package com.example.service
+package com.example.user.domain
 
 import com.example.user.infrastructure.persistance.UserMapper
 import com.example.user.dto.RegDto

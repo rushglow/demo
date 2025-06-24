@@ -1,4 +1,4 @@
-package com.example;
+package com.example.user.infrastructure.controller;
 
 import com.example.token.dto.RefreshTokenRq
 import com.example.user.dto.RegDto
