@@ -1,21 +1,15 @@
-package example.micronaut
+package com.example.security.provider
 
-import com.example.model.dto.UserDto
-import com.example.model.entity.UserEntity
-import com.example.repository.UserRepository
-import com.example.security.PasswordEncoderProvider
-import com.example.service.TokenService
-import com.example.service.UserService
+import com.example.user.dto.UserDto
+import com.example.token.service.TokenService
+import com.example.user.service.UserService
 import io.micronaut.http.HttpRequest
-import io.micronaut.security.authentication.Authentication
 import io.micronaut.security.authentication.AuthenticationFailureReason
 import io.micronaut.security.authentication.AuthenticationRequest
 import io.micronaut.security.authentication.AuthenticationResponse
 import io.micronaut.security.authentication.provider.HttpRequestAuthenticationProvider
 import jakarta.inject.Inject
 import jakarta.inject.Singleton
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder
-import org.springframework.security.crypto.password.PasswordEncoder
 
 @Singleton
 class AuthenticationProviderUserPassword<B> : HttpRequestAuthenticationProvider<B> {

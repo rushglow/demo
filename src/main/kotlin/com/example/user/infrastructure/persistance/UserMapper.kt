@@ -1,12 +1,8 @@
-package com.example.mapper
+package com.example.user.infrastructure.persistance
 
-import com.example.model.dto.RegDto
-import com.example.model.dto.UserDto
-import com.example.model.entity.UserEntity
-import jakarta.inject.Inject
+import com.example.user.dto.RegDto
+import com.example.user.dto.UserDto
 import jakarta.inject.Singleton
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder
-import org.springframework.security.crypto.password.PasswordEncoder
 
 @Singleton
 class UserMapper {

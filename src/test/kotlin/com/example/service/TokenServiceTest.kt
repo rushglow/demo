@@ -1,8 +1,10 @@
 package com.example.service
 
-import com.example.model.entity.TokenEntity
-import com.example.model.entity.UserEntity
-import com.example.repository.TokenRepository
+import com.example.token.infrastructure.persistance.TokenEntity
+import com.example.user.infrastructure.persistance.UserEntity
+import com.example.token.infrastructure.persistance.TokenRepository
+import com.example.token.service.TokenService
+import com.example.user.service.UserService
 import io.micronaut.security.authentication.Authentication
 import io.micronaut.security.token.jwt.generator.JwtTokenGenerator
 import io.micronaut.test.extensions.junit5.annotation.MicronautTest

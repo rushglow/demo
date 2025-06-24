@@ -1,11 +1,12 @@
-package com.example.model.dto
+package com.example.token.dto
 
 import io.micronaut.core.annotation.Introspected
 import io.micronaut.serde.annotation.Serdeable
 
-@Serdeable
 @Introspected
-data class RefreshTokenRq (
+@Serdeable
+data class TokenPair(
+    var accessToken: String,
     var refreshToken: String
-){
+) {
 }

@@ -1,5 +1,6 @@
-package com.example.model.entity
+package com.example.user.infrastructure.persistance
 
+import com.example.token.infrastructure.persistance.TokenEntity
 import jakarta.persistence.*
 import org.jetbrains.annotations.NotNull
 

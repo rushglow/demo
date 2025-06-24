@@ -1,4 +1,4 @@
-package com.example.model.dto
+package com.example.user.dto
 
 import com.fasterxml.jackson.annotation.JsonIgnore
 import io.micronaut.core.annotation.Introspected

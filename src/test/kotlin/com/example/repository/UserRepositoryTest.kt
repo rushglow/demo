@@ -1,8 +1,9 @@
 package com.example.repository
 
-import com.example.model.entity.TokenEntity
-import com.example.model.entity.UserEntity
+import com.example.token.infrastructure.persistance.TokenEntity
+import com.example.user.infrastructure.persistance.UserEntity
 import com.example.testcontainers.TestDbContainer
+import com.example.user.infrastructure.persistance.UserRepository
 import io.micronaut.test.extensions.junit5.annotation.MicronautTest
 import jakarta.inject.Inject
 import org.junit.jupiter.api.*

@@ -1,12 +1,12 @@
 package com.example.service
 
-import com.example.mapper.UserMapper
-import com.example.model.dto.RegDto
-import com.example.model.dto.UserDto
-import com.example.model.entity.UserEntity
-import com.example.repository.TokenRepository
-import com.example.repository.UserRepository
-import com.example.security.PasswordEncoderProvider
+import com.example.user.infrastructure.persistance.UserMapper
+import com.example.user.dto.RegDto
+import com.example.user.dto.UserDto
+import com.example.user.infrastructure.persistance.UserEntity
+import com.example.user.infrastructure.persistance.UserRepository
+import com.example.security.provider.PasswordEncoderProvider
+import com.example.user.service.UserService
 import io.micronaut.test.extensions.junit5.annotation.MicronautTest
 import jakarta.inject.Inject
 import org.junit.jupiter.api.Assertions.assertEquals
@@ -17,7 +17,6 @@ import org.junit.jupiter.api.assertThrows
 import org.mockito.Mockito
 import org.mockito.Mockito.mock
 import org.mockito.Mockito.`when`
-import org.springframework.security.crypto.password.PasswordEncoder
 import java.util.*
 
 @MicronautTest(environments = ["test"])

@@ -1,12 +1,11 @@
 package com.example.controller
 
-import com.example.model.dto.RegDto
-import com.example.model.dto.TokenPair
-import com.example.model.dto.UserDto
-import com.example.repository.TokenRepository
-import com.example.repository.UserRepository
+import com.example.user.dto.RegDto
+import com.example.token.dto.TokenPair
+import com.example.user.dto.UserDto
+import com.example.token.infrastructure.persistance.TokenRepository
+import com.example.user.infrastructure.persistance.UserRepository
 import com.example.testcontainers.TestDbContainer
-import com.github.dockerjava.api.model.AuthResponse
 import io.micronaut.http.HttpRequest
 import io.micronaut.http.HttpStatus
 import io.micronaut.http.client.HttpClient

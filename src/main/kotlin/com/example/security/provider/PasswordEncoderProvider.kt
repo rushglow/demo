@@ -1,4 +1,4 @@
-package com.example.security
+package com.example.security.provider
 
 import jakarta.inject.Singleton
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder

@@ -1,8 +1,8 @@
 package com.example.entity
 
 
-import com.example.model.entity.TokenEntity
-import com.example.model.entity.UserEntity
+import com.example.token.infrastructure.persistance.TokenEntity
+import com.example.user.infrastructure.persistance.UserEntity
 import io.micronaut.test.extensions.junit5.annotation.MicronautTest
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.BeforeAll

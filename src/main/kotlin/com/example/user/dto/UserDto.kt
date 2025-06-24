@@ -1,6 +1,6 @@
-package com.example.model.dto
+package com.example.user.dto
 
-import com.example.model.entity.TokenEntity
+import com.example.token.infrastructure.persistance.TokenEntity
 import com.fasterxml.jackson.annotation.JsonIgnore
 import io.micronaut.core.annotation.Introspected
 import io.micronaut.serde.annotation.Serdeable

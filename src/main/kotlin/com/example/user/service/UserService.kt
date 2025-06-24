@@ -1,19 +1,16 @@
-package com.example.service
+package com.example.user.service
 
-import com.example.mapper.UserMapper
-import com.example.model.dto.RegDto
-import com.example.model.dto.TokenPair
-import com.example.model.dto.UserDto
-import com.example.model.entity.TokenEntity
-import com.example.model.entity.UserEntity
-import com.example.repository.UserRepository
-import com.example.security.PasswordEncoderProvider
-import example.micronaut.AuthenticationProviderUserPassword
+import com.example.token.dto.TokenPair
+import com.example.token.infrastructure.persistance.TokenEntity
+import com.example.security.provider.PasswordEncoderProvider
+import com.example.token.service.TokenService
+import com.example.user.infrastructure.persistance.UserMapper
+import com.example.user.dto.RegDto
+import com.example.user.dto.UserDto
+import com.example.user.infrastructure.persistance.UserRepository
 import io.micronaut.security.authentication.Authentication
-import io.micronaut.security.token.validator.RefreshTokenValidator
 import jakarta.inject.Inject
 import jakarta.inject.Singleton
-import org.springframework.security.crypto.password.PasswordEncoder
 
 @Singleton
 class UserService(
@@ -75,7 +72,7 @@ class UserService(
         return TokenPair(accessToken, refreshToken)
     }
 
-    fun banUser(id:Long): UserDto{
+    fun banUser(id:Long): UserDto {
         var bannedUser = userRepository.findById(id).orElseThrow{throw RuntimeException("UserService: User not found")}
         bannedUser.banned = true
         userRepository.update(bannedUser)

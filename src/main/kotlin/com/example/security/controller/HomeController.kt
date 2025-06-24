@@ -1,4 +1,4 @@
-package example.micronaut
+package com.example.security.controller
 
 import io.micronaut.http.HttpResponse
 import io.micronaut.http.MediaType.TEXT_PLAIN

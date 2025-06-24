@@ -1,6 +1,5 @@
-package com.example.repository
+package com.example.token.infrastructure.persistance
 
-import com.example.model.entity.TokenEntity
 import io.micronaut.data.annotation.Query
 import io.micronaut.data.annotation.Repository
 import io.micronaut.data.jpa.repository.JpaRepository

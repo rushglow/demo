@@ -1,8 +1,8 @@
-package com.example.service
+package com.example.token.service
 
-import com.example.model.entity.TokenEntity
-import com.example.model.entity.UserEntity
-import com.example.repository.TokenRepository
+import com.example.token.infrastructure.persistance.TokenEntity
+import com.example.token.infrastructure.persistance.TokenRepository
+import com.example.user.infrastructure.persistance.UserEntity
 import io.micronaut.security.authentication.Authentication
 import io.micronaut.security.token.jwt.generator.JwtTokenGenerator
 import jakarta.inject.Inject

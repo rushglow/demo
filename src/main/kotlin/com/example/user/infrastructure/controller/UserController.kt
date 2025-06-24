@@ -1,22 +1,17 @@
-package com.example.controller
+package com.example.user.infrastructure.controller
 
-import com.example.model.dto.RefreshTokenRq
-import com.example.model.dto.RegDto
-import com.example.model.dto.TokenPair
-import com.example.model.dto.UserDto
-import com.example.service.TokenService
-import com.example.service.UserService
-import com.sun.security.auth.UserPrincipal
-import example.micronaut.AuthenticationProviderUserPassword
+import com.example.token.dto.RefreshTokenRq
+import com.example.token.dto.TokenPair
+import com.example.user.service.UserService
+import com.example.user.dto.RegDto
+import com.example.user.dto.UserDto
+import com.example.security.provider.AuthenticationProviderUserPassword
 import io.micronaut.http.annotation.*
 import io.micronaut.security.annotation.Secured
-import io.micronaut.security.authentication.Authentication
 import io.micronaut.security.authentication.AuthenticationException
-import io.micronaut.security.authentication.AuthenticationResponse
 import io.micronaut.security.authentication.UsernamePasswordCredentials
 import io.micronaut.security.rules.SecurityRule
 import jakarta.inject.Inject
-import java.security.Principal
 
 @Secured(SecurityRule.IS_ANONYMOUS)
 @Controller("/user")

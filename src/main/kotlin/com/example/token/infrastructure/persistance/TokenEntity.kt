@@ -1,5 +1,6 @@
-package com.example.model.entity
+package com.example.token.infrastructure.persistance
 
+import com.example.user.infrastructure.persistance.UserEntity
 import io.micronaut.data.annotation.DateCreated
 import jakarta.persistence.*
 import java.time.Instant
